@@ -1,0 +1,5 @@
+<ul>
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, add_task_path(task.id), method: :add  %></li>
+  <% end %>
+</ul>
